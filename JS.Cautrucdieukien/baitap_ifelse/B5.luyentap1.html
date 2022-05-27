@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập điểm bài kiểm tra'))
+    let b = parseFloat(prompt('Nhập điểm thi giữa kì'))
+    let c = parseFloat(prompt('Nhập điểm thi cuối kỳ'))
+    let d = parseFloat((a + b +c)/3)
+    alert(d)
+    if(d >= 8){
+        alert('Xếp loại học lực giỏi')
+    } else if (d >= 7.5){
+        alert('Xếp loại học lực khá')
+    } else if (d >= 6.5){
+        alert('Xếp loại học lực trung bình')
+    } else {
+        alert('Xếp loại học lực yếu')
+    }
+</script>
+
+</body>
+</html>

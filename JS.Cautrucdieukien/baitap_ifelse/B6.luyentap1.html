@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseFloat(prompt('Nhập doanh thu bán hàng 1'))
+    let hoahong1 = parseFloat((n/100)*2)
+    let hoahong2 = parseFloat((n/100)*5)
+    let hoahong3 = parseFloat((n/100)*10)
+    if(n<=500000 ){
+        alert(hoahong1)
+        alert('Nhận được mức hoa hồng 2%')
+    } else if(n<=1000000){
+        alert(hoahong2)
+        alert('Nhận được mức hoa hồng 5%')
+    }else{
+        alert('Nhận được mức hoa hồng 10%')
+        alert(hoahong3)
+    }
+</script>
+</body>
+</html>

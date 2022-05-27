@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phicodinh = 25000
+    let n1 = parseFloat(prompt('Nhập số phút gọi'))
+    let phithuebaolan1 = parseInt(600*n1)
+    let phithuebaolan2 = parseInt(400*n1)
+    let phithuebaotieptheo = parseInt(200*n1)
+    if(n1<=50) {
+        alert('Tiền cước trong lần gọi đầu tiên')
+        alert(phithuebaolan1)
+    } else if (n1<=150){
+       alert('Tiền cước trong lần gọi thứ hai')
+        alert(phithuebaolan2)
+    } else {
+        alert('Tiền cước trong lần gọi thứ tiếp theo')
+        alert(phithuebaocodinh)
+    }
+</script>
+
+</body>
+</html>
