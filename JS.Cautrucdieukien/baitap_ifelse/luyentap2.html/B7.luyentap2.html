@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập một số a bất kì'))
+    let b = parseFloat(prompt('Nhập một số b bất kì'))
+    let c = parseFloat(prompt('Nhập một số c bất kì'))
+    let denta = (b^2) -(4*a*c)
+    if (denta < 0){
+        alert('Phương trình vô nghiệm')
+    } else if (denta == 0){
+        alert('Phương trình có nhiệm kép')
+        alert((-b)/2*a)
+    } else if (denta > 0){
+        alert('Phơng trình có 2 nghiệm phân biệt')
+        alert(((-b)/2*a) + (Math.sqrt(denta))/2*a)
+        alert(((-b)/2*a) - (Math.sqrt(denta))/2*a)
+    } else {
+        alert(denta)
+    }
+</script>
+
+</body>
+</html>

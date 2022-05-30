@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Nhập a là một cạnh của tam giác'))
+    let b = parseFloat(prompt('Nhập b là một cạnh của tam giác'))
+    let c = parseFloat(prompt('Nhập c là một cạnh của tam giác'))
+    if(a && b && c > 0) {
+        alert('Đây là ba cạnh của một tam giác')
+    } else if (a + b > c){
+        alert('Đây là một cạnh của một tam giác')
+    } else if (b + c > a){
+        alert('Đây là một cạnh của một tam giác')
+    } else if (a + c > b){
+        alert('Đây là ba cạnh của một tam giác')
+    } else {
+        alert('Đây không phải là ba cạnh của một tam giác')
+    }
+</script>
+</body>
+</html>
