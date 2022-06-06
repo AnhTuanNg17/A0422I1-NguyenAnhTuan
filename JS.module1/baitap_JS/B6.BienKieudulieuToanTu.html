@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Ứng Dụng Máy Tính</title>
 </head>
+<h1>Caculator</h1>
 <body>
-$END$
+<input type="number" id= "n1">
+<input type="number" id= "n2">
+<br>
+<button onclick="phepcong()">Adition(+)</button>
+<button onclick="pheptru()">Subtraction(-)</button>
+<button onclick="phepnhan()">Multiplication(X)</button>
+<button onclick="phepchia()">Division(/)</button><br>
+<br>
+<p>Result: <span id="result"></span></p>
+<script>
+    function phepcong() {
+        let n1 = document.getElementById('n1').value;
+        let n2 = document.getElementById('n2').value;
+        let  result = parseInt(n1) + parseInt(n2);
+        document.getElementById("result").innerText = result
+        // alert result
+    }
+    function pheptru() {
+            let n1 = document.getElementById('n1').value;
+            let n2 = document.getElementById('n2').value;
+            let result = parseInt(n1) - parseInt(n2);
+            document.getElementById("result").innerText = result
+             // alert(result)alert(result)
+    }
+    function phepnhan() {
+        let n1 = document.getElementById('n1').value;
+        let n2 = document.getElementById('n2').value;
+        let  result = parseInt(n1) * parseInt(n2);
+        document.getElementById("result").innerText = result
+        // alert(result)
+    }
+    function phepchia(){
+        let n1 = document.getElementById('n1').value;
+        let n2 = document.getElementById('n2').value;
+        let  result = parseInt(n1) / parseInt(n2);
+        document.getElementById("result").innerText = result
+        // alert(result)
+    }
+</script>
+
 </body>
 </html>

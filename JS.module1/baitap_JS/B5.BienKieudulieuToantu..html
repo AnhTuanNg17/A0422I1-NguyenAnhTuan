@@ -2,9 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1>Ứng dụng chuyển đổi tiền tệ</h1>
+<table border="0" style="width: 70%; text-align: center">
+    <tr>
+        <th>Amounnt</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="dauvao">
+        </td>
+        <td>
+            <select name="country" id="select1" style="width: 150px">
+                <option value="a">VNĐ</option>
+                <option value="b">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="currency" id="select2" style="width: 150px">
+                <option value="a">VNĐ</option>
+                <option value="b">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: left; color: blue" colspan="4">
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+<script>
+    function convert() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let select1 = document.getElementById('select1').value;
+        let select2 = document.getElementById('select2').value;
+        let result;
+        if (select1 == select2) {
+            result = (giatrivao)
+        }
+        if (select1 == "a" && select2 == "b") {
+            result = (giatrivao/24000)
+        }
+        if (select1 == "b" && select2 == "a") {
+            result = (24000*giatrivao)
+        }
+        document.getElementById('result').innerText = "Result = " + result;
+    }
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
