@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function factorialInt() {
+        let number = parseInt(prompt('Nhập một số nguyên bất kì '));
+        let factorial = 1;
+        for (let i = 1; i <= number; i++){
+            factorial *= i;
+        }
+document.write('giai thừa cần tính là ' + number + factorial);
+document.write('<br>')
+    }
+    factorialInt()
+</script>
+</body>
+</html>
