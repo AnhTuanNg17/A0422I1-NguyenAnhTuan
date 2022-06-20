@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let array = [5,8,-3,7,9,2,1,6,11]
+    let max = array[0];
+    let sum = 0;
+    for (let i = 1; i < array.length; i++){
+        if(max < array[i]){
+            max = array[i];
+        }
+        sum += array[i]
+    }
+let trungBinh = sum / array.length
+    alert("Giá trị lớn nhất của dãy là: " + max)
+    alert("Giá trị trung bình của dãy là: " + trungBinh)
+</script>
 </body>
 </html>

@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let check = false;
+    let V = Number(prompt('Nhập một số nguyên'));
+    let array = [1,2,3,4,5,6,7,8,9,0]
+    for (let i = 0; i < array.length; i++) {
+        if (V === array[i]) {
+            check = true;
+            alert("V is in array ");
+        }
+    }
+    if(!check){
+        alert("V is not array");
+    }
+</script>
 </body>
 </html>
